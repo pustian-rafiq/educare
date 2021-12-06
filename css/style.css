@@ -24,6 +24,9 @@ h6{
 
 /*Navigation style*/
 nav{
+	position: fixed;
+	background-color: #fff;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -54,4 +57,57 @@ nav .navigation ul li a{
 }
 nav .navigation ul li a:hover{
 	color: #FDC93B;
+}
+/*Home style*/
+.home{
+	background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url("../images/back.jpg");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.home h2{
+	color: #fff;
+	font-size: 2.2rem;
+	letter-spacing: 1px;
+}
+.home p{
+	color: #fff;
+	font-size: 0.9rem;
+	line-height: 25px;
+	width: 50%;
+}
+.home .btn{
+margin-top: 30px;
+}
+.home a{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 13px 35px;
+	background-color: #fff;
+	font-weight: 600;
+	border-radius: 5px;
+}
+.home .btn .blue{
+	 color: #fff;
+	 background: rgb(21,21,100);
+	 margin-right: 3px;
+}
+.home .btn .blue:hover{
+	 color: #fff;
+	 background: red;
+}
+
+.home .btn .yellow{
+	 color: #000;
+	 background: yellow;
+}
+.home .btn .yellow:hover{
+	 color: #000;
+	 background: violet;
 }
