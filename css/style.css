@@ -192,3 +192,73 @@ margin-top: 30px;
 	right: 15px;
 	top: 140px;
 }
+
+/*Registration style*/
+#registration{
+	padding: 6vw 8vw;
+	background-image: linear-gradient(rgba(99,122,168,0.5),rgba(81,91,233,0.5)), url("../images/login2.jpg");
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#registration .reminder, h1{
+	color: #ffffff;
+}
+#registration .reminder .time{
+	display: flex;
+	margin-top: 40px;
+}
+#registration .reminder .time .date{
+	 text-align: center;
+	 padding: 13px 33px;
+	 background: rgba(255,255,255, 0.25);
+	  
+	 box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+	 border-radius: 10px;
+	 margin: 0 5px 10px 5px;
+	 border: 1px solid rgba(255,255,255,0.18);
+	 font-size: 1.1rem;
+	 font-weight: 600;
+}
+#registration .form{
+	background: #fff;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	 box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+}
+#registration .form h3{
+	font-size: 20px;
+	color: red;
+}
+#registration .form input{
+	margin: 15px 0;
+	padding: 15px 10px;
+	border: 1px solid rgb(84, 40, 241);
+	outline: none;
+}
+#registration .form .btn{
+margin-top: 30px;
+}
+#registration .form .btn a{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 13px 35px;
+	background-color: #fff;
+	font-weight: 600;
+	border-radius: 5px;
+}
+#registration .form .btn .blue{
+	 color: #fff;
+	 background: rgb(21,21,100);
+	 margin-right: 3px;
+}
+#registration .form .btn .blue:hover{
+	 color: #fff;
+	 background: red;
+}
