@@ -40,6 +40,18 @@ nav img{
 	/*height: 100px;*/
 	cursor: pointer;
 }
+nav .navigation{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+nav .navigation .menu-btn i{
+	font-size: 30px;
+    display: none;
+}
+#menu-close{
+	display: none;
+}
 nav .navigation ul{
 	display: flex;
 	justify-content: flex-end;
@@ -84,7 +96,7 @@ nav .navigation ul li a:hover{
 	width: 50%;
 }
 .home .btn{
-margin-top: 30px;
+   margin-top: 30px;
 }
 .home a{
 	text-decoration: none;
@@ -117,12 +129,12 @@ margin-top: 30px;
 
 #features-section{
 	text-align: center;
-	padding: 5vh 8vh 0 8vh;
+	padding: 5vw 8vw 0 8vw;
 }
 #features-section h1{
 	color:#404040;
 	text-transform: capitalize;
-	
+
 }
 #features-section .features{
 	/*display: flex;
@@ -159,7 +171,7 @@ margin-top: 30px;
 }
 /*Course*/
 #course-section{
-	padding: 8vh 8vh 8vw 8vh;
+	padding: 8vw 8vw 0 8vw;
 	text-align: center;
 }
 #course-section h1{
@@ -413,4 +425,132 @@ footer .copyright .social-links i{
 footer .copyright .social-links i:hover{
 	background: #FDC93B;
 	color: #2c2c2c;
+}
+
+/* Media query for tablet */
+@media (max-width: 769px){
+	nav {
+	 padding: 15px 20px;
+   }
+   nav img {
+	width: 130px;
+  }
+  nav .navigation .menu-btn i{
+      display: initial;
+	}
+	#menu-close{
+		display: initial;
+		color: #fff;
+		margin-right: 130px;
+		font-size: 2rem;
+		z-index: 11;
+		cursor: pointer;
+	}
+	/*nav .navigation{
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-start;
+	}*/
+	nav .navigation ul{
+		position: absolute;
+		top: 0;
+		right: -220px;
+		width: 220px;
+		height: 100vh;
+		background: #000;
+		opacity: 0.9;
+		border: 1px solid rgba(255,255,255, 0.18);
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		transition: 0.4s ease;
+    }
+    nav .navigation ul.active{
+    	right: 0;
+    }
+    nav .navigation ul li a{
+    	color: #fff;
+    }
+     nav .navigation ul li{
+  
+    	margin-bottom: 10px;
+    	padding: 5px 5px;
+    	transition: 0.3s ease;
+     
+    }
+      nav .navigation ul li:hover{
+  		background: green;
+  		width: 100%;
+  		text-align: center;
+     
+    }
+     nav .navigation ul i:nth-child(1){
+     	margin-top: 30px;
+     	margin-left: 5px;
+     }
+     nav .navigation ul li:nth-child(1){
+     	margin-top: 70px;
+     }
+     .home {
+	   padding:40px 0px;
+	   margin-top:0px;
+    }
+    .home p {
+	width: 90%;
+   }
+   #features-section{
+ 
+	padding: 8vw 4vw 0 4vw;
+   }
+    #course-section{
+	 
+	padding: 8vw 4vw 0 4vw;
+   }
+   #registration{
+	padding: 6vw 4vw; 
+}
+ 
+#registration .reminder .time{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+#registration .reminder .time .date{
+	 padding: 5px 17px; 
+	 margin: 0 3px 5px 3px;
+	 font-size: 1rem;
+	 font-weight: 500;
+}
+#experts{
+	padding: 8vw 8vw 8vw 8vw;
+	text-align: center;
+}
+footer .copyright .social-links{
+	margin-top: 10px;
+}
+}
+
+/*Mobile responsive*/
+ @media (max-width: 475px){
+ 	#registration{
+	padding: 6vw 8vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+#registration .reminder .time{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+#course-section h1, #registration h1,#features-section h1, #experts h1{
+	font-size: 28px;
+}
+#registration .form{
+	margin-top: 10px;
+ }
 }
